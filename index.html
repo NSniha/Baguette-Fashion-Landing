@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mellow Studio | Brand Worlds for Modern Makers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  
+  <div class="top-bar">
+    <div class="top-track" data-marquee>
+      <span>New brand intensives now open <i>✦</i></span>
+      <span>Creative direction for thoughtful founders <i>✦</i></span>
+      <span>Web design, art direction, packaging <i>✦</i></span>
+      <span>Launching beautiful ideas with clarity <i>✦</i></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="#" class="brand-logo" aria-label="Mellow Studio home">Mellow</a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#">Studio</a>
+      <a href="#">Work</a>
+      <a href="#">Services</a>
+      <a href="#">Retainers</a>
+      <a href="#">Journal</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="bag-link">Brief</a>
+      <button class="bag-count" type="button" aria-label="Saved briefs">0</button>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" data-overlay></div>
+
+  <aside class="mobile-menu" data-mobile-menu aria-label="Mobile navigation">
+    <div class="mobile-menu-top">
+      <a href="#" class="mobile-brand">Mellow</a>
+      <button class="menu-close" type="button" aria-label="Close menu">×</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="#">Studio</a>
+      <a href="#">Selected Work</a>
+      <a href="#">Services</a>
+      <a href="#">Creative Retainers</a>
+      <a href="#">Journal</a>
+      <a href="#">Start a Project</a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <p>Brand systems, editorial websites, and campaign visuals for calm, confident launches.</p>
+      <a href="mailto:hello@mellowstudio.com">hello@mellowstudio.com</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-heading">
+        <p class="hero-kicker">Independent design studio</p>
+
+        <h1 class="hero-title">
+          <span><em>B</em>RAND WORLDS</span>
+          <span>FOR MODERN MAKERS</span>
+        </h1>
+      </div>
+
+      <div class="hero-slider">
+        <div class="hero-track" data-slider-track>
+          <article class="hero-card" style="--img: url('../assets/hero-1.jpg')">
+            <div class="hero-card-content">
+              <span>Identity System</span>
+              <h2>Soft visual language for a beauty launch.</h2>
+            </div>
+          </article>
+
+          <article class="hero-card" style="--img: url('../assets/hero-2.jpg')">
+            <div class="hero-card-content">
+              <span>Packaging Direction</span>
+              <h2>Minimal packaging with memorable shelf presence.</h2>
+            </div>
+          </article>
+
+          <article class="hero-card" style="--img: url('../assets/hero-3.jpg')">
+            <div class="hero-card-content">
+              <span>Editorial Styling</span>
+              <h2>Campaign art direction for seasonal stories.</h2>
+            </div>
+          </article>
+
+          <article class="hero-card" style="--img: url('../assets/hero-4.jpg')">
+            <div class="hero-card-content">
+              <span>Digital Experience</span>
+              <h2>Elegant websites made to feel effortless.</h2>
+            </div>
+          </article>
+        </div>
+
+        <div class="slider-controls" aria-label="Mobile slider controls">
+          <button class="slider-btn" type="button" data-prev aria-label="Previous slide">‹</button>
+          <button class="slider-btn" type="button" data-next aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
