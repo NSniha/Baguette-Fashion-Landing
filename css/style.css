@@ -2,7 +2,6 @@
   --bg: #f1ede9;
   --black: #050505;
   --white: #ffffff;
-  --muted: rgba(5, 5, 5, 0.64);
   --header-x: 72px;
   --gallery-gap: 27px;
   --card-radius: 46px;
@@ -46,7 +45,7 @@ button {
   position: relative;
   z-index: 100;
   width: 100%;
-  height: 24px;
+  height: 22px;
   overflow: hidden;
   background: var(--black);
 }
@@ -56,27 +55,26 @@ button {
   align-items: center;
   width: max-content;
   height: 100%;
-  animation: marqueeMove 30s linear infinite;
+  animation: marqueeMove 34s linear infinite;
 }
 
 .top-track span {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding-right: 18px;
+  gap: 7px;
+  padding-right: 13px;
   color: var(--white);
   font-size: 11px;
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
-  letter-spacing: 0.01em;
 }
 
 .top-track i {
   display: inline-grid;
   place-items: center;
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border: 1px solid var(--white);
   border-radius: 50%;
   font-size: 7px;
@@ -86,7 +84,7 @@ button {
 
 @keyframes marqueeMove {
   from {
-    transform: translateX(0);
+    transform: translateX(-120px);
   }
 
   to {
@@ -109,10 +107,10 @@ button {
 .mobile-brand {
   justify-self: start;
   font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 0.9;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.055em;
 }
 
 .desktop-nav {
@@ -127,10 +125,9 @@ button {
   position: relative;
   color: var(--black);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
 
 .desktop-nav a::after,
@@ -171,32 +168,26 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  transition: transform 0.35s var(--ease);
-}
-
-.bag-count:hover {
-  transform: scale(1.07);
 }
 
 .menu-btn {
   display: none;
   position: relative;
   place-items: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(5, 5, 5, 0.18);
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(5, 5, 5, 0.16);
   border-radius: 50%;
   background: transparent;
-  transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 
 .menu-btn span {
   position: absolute;
-  width: 16px;
-  height: 1.5px;
-  border-radius: 999px;
+  display: block;
+  width: 15px;
+  height: 1px;
   background: var(--black);
-  transition: transform 0.35s var(--ease);
+  transition: transform 0.35s var(--ease), background 0.35s var(--ease);
 }
 
 .menu-btn span:first-child {
@@ -209,7 +200,6 @@ button {
 
 body.menu-open .menu-btn {
   background: var(--black);
-  border-color: var(--black);
 }
 
 body.menu-open .menu-btn span {
@@ -225,27 +215,14 @@ body.menu-open .menu-btn span:last-child {
 }
 
 .hero-section {
-  min-height: calc(100svh - 128px);
-  padding-bottom: 24px;
+  min-height: calc(100svh - 126px);
+  padding-bottom: 19px;
   background: var(--bg);
 }
 
 .hero-heading {
-  padding-top: 34px;
+  padding-top: 36px;
   text-align: center;
-}
-
-.hero-kicker {
-  margin-bottom: 20px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  opacity: 0;
-  transform: translateY(16px);
-  animation: titleReveal 0.9s var(--ease) forwards;
 }
 
 .hero-title {
@@ -253,15 +230,15 @@ body.menu-open .menu-btn span:last-child {
   max-width: calc(100vw - 120px);
   margin-inline: auto;
   font-family: "Cormorant Garamond", "Times New Roman", serif;
-  font-size: clamp(86px, 7.8vw, 124px);
+  font-size: clamp(92px, 8vw, 122px);
   font-style: italic;
   font-weight: 700;
   line-height: 0.76;
-  letter-spacing: -0.095em;
+  letter-spacing: -0.092em;
   text-align: center;
   text-transform: uppercase;
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(26px);
   animation: titleReveal 1s var(--ease) 0.08s forwards;
 }
 
@@ -273,7 +250,7 @@ body.menu-open .menu-btn span:last-child {
   display: inline-block;
   margin-right: -0.14em;
   font-family: inherit;
-  font-size: 1.13em;
+  font-size: 1.12em;
   font-style: italic;
   font-weight: 500;
   line-height: 0;
@@ -290,7 +267,7 @@ body.menu-open .menu-btn span:last-child {
 .hero-slider {
   position: relative;
   width: 100%;
-  margin-top: 84px;
+  margin-top: 91px;
   overflow: hidden;
 }
 
@@ -302,11 +279,7 @@ body.menu-open .menu-btn span:last-child {
 }
 
 .hero-card {
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  align-items: flex-end;
-  min-height: 498px;
+  height: 498px;
   overflow: hidden;
   border-radius: var(--card-radius);
   background-color: #ded8d2;
@@ -317,53 +290,6 @@ body.menu-open .menu-btn span:last-child {
   opacity: 0;
   transform: translateY(44px) scale(0.985);
   animation: cardReveal 0.95s var(--ease) forwards;
-}
-
-.hero-card::before {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  content: "";
-  background: linear-gradient(180deg, rgba(5, 5, 5, 0.02) 35%, rgba(5, 5, 5, 0.52) 100%);
-}
-
-.hero-card::after {
-  position: absolute;
-  inset: 14px;
-  z-index: -1;
-  content: "";
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: calc(var(--card-radius) - 14px);
-  pointer-events: none;
-}
-
-.hero-card-content {
-  width: 100%;
-  padding: 0 28px 30px;
-  color: var(--white);
-  transform: translateY(8px);
-  opacity: 0;
-  animation: contentReveal 0.8s var(--ease) forwards;
-}
-
-.hero-card-content span {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
-.hero-card-content h2 {
-  max-width: 300px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(27px, 2vw, 38px);
-  font-style: italic;
-  font-weight: 600;
-  line-height: 0.9;
-  letter-spacing: -0.045em;
 }
 
 .hero-card:nth-child(1) {
@@ -382,33 +308,10 @@ body.menu-open .menu-btn span:last-child {
   animation-delay: 0.54s;
 }
 
-.hero-card:nth-child(1) .hero-card-content {
-  animation-delay: 0.55s;
-}
-
-.hero-card:nth-child(2) .hero-card-content {
-  animation-delay: 0.66s;
-}
-
-.hero-card:nth-child(3) .hero-card-content {
-  animation-delay: 0.77s;
-}
-
-.hero-card:nth-child(4) .hero-card-content {
-  animation-delay: 0.88s;
-}
-
 @keyframes cardReveal {
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes contentReveal {
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -421,8 +324,7 @@ body.menu-open .menu-btn span:last-child {
   inset: 0;
   z-index: 110;
   pointer-events: none;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(7px);
+  background: rgba(0, 0, 0, 0.46);
   opacity: 0;
   transition: opacity 0.35s ease;
 }
@@ -434,17 +336,17 @@ body.menu-open .menu-btn span:last-child {
   z-index: 120;
   display: flex;
   flex-direction: column;
-  width: min(86vw, 390px);
+  width: min(86vw, 360px);
   height: 100dvh;
-  padding: 26px 30px 30px;
-  background: #f7f1eb;
+  padding: 24px 28px 30px;
+  background: var(--bg);
   box-shadow: -24px 0 80px rgba(0, 0, 0, 0.18);
-  transform: translateX(110%);
   visibility: hidden;
+  transform: translateX(110%);
   transition: transform 0.46s var(--ease), visibility 0.46s var(--ease);
 }
 
-.mobile-menu-top {
+.mobile-menu-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -453,53 +355,43 @@ body.menu-open .menu-btn span:last-child {
 .menu-close {
   display: inline-grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   color: var(--white);
   background: var(--black);
-  font-size: 30px;
+  font-size: 29px;
   line-height: 1;
-  transition: transform 0.35s var(--ease);
-}
-
-.menu-close:hover {
-  transform: rotate(90deg);
 }
 
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 19px;
-  margin-top: 72px;
+  gap: 22px;
+  margin-top: 74px;
 }
 
 .mobile-nav a {
   width: fit-content;
   font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
+  font-size: 32px;
   font-style: italic;
   font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: -0.052em;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
   text-transform: uppercase;
   opacity: 0;
-  transform: translateX(28px);
-  transition: opacity 0.42s var(--ease), transform 0.42s var(--ease);
+  transform: translateX(24px);
+  transition: opacity 0.38s var(--ease), transform 0.38s var(--ease);
 }
 
-.mobile-nav a:hover {
-  transform: translateX(8px);
-}
-
-.mobile-menu-footer {
+.mobile-menu-bottom {
   margin-top: auto;
-  padding-top: 34px;
+  padding-top: 28px;
   border-top: 1px solid rgba(5, 5, 5, 0.12);
 }
 
-.mobile-menu-footer p {
-  max-width: 270px;
+.mobile-menu-bottom p {
   margin-bottom: 18px;
   color: rgba(5, 5, 5, 0.68);
   font-size: 13px;
@@ -507,11 +399,10 @@ body.menu-open .menu-btn span:last-child {
   line-height: 1.6;
 }
 
-.mobile-menu-footer a {
+.mobile-menu-bottom a {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 body.menu-open .menu-overlay {
@@ -530,27 +421,27 @@ body.menu-open .mobile-nav a {
 }
 
 body.menu-open .mobile-nav a:nth-child(1) {
-  transition-delay: 0.12s;
+  transition-delay: 0.1s;
 }
 
 body.menu-open .mobile-nav a:nth-child(2) {
-  transition-delay: 0.17s;
+  transition-delay: 0.15s;
 }
 
 body.menu-open .mobile-nav a:nth-child(3) {
-  transition-delay: 0.22s;
+  transition-delay: 0.2s;
 }
 
 body.menu-open .mobile-nav a:nth-child(4) {
-  transition-delay: 0.27s;
+  transition-delay: 0.25s;
 }
 
 body.menu-open .mobile-nav a:nth-child(5) {
-  transition-delay: 0.32s;
+  transition-delay: 0.3s;
 }
 
 body.menu-open .mobile-nav a:nth-child(6) {
-  transition-delay: 0.37s;
+  transition-delay: 0.35s;
 }
 
 @media (max-width: 1320px) {
@@ -565,11 +456,11 @@ body.menu-open .mobile-nav a:nth-child(6) {
   }
 
   .hero-title {
-    font-size: clamp(78px, 7.8vw, 108px);
+    font-size: clamp(82px, 7.9vw, 108px);
   }
 
   .hero-card {
-    min-height: 460px;
+    height: 460px;
   }
 }
 
@@ -594,7 +485,7 @@ body.menu-open .mobile-nav a:nth-child(6) {
 
   .hero-section {
     min-height: auto;
-    padding-bottom: 44px;
+    padding-bottom: 42px;
   }
 
   .hero-heading {
@@ -604,33 +495,35 @@ body.menu-open .mobile-nav a:nth-child(6) {
   .hero-title {
     width: auto;
     max-width: 900px;
-    font-size: clamp(62px, 9vw, 92px);
+    font-size: clamp(66px, 9.4vw, 94px);
     line-height: 0.8;
     letter-spacing: -0.084em;
   }
 
   .hero-slider {
-    margin-top: 64px;
+    margin-top: 66px;
     padding-inline: 28px;
   }
 
   .hero-track {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gallery-gap);
   }
 
   .hero-card {
-    min-height: clamp(360px, 44vw, 450px);
+    height: clamp(360px, 44vw, 450px);
   }
 }
 
 @media (max-width: 680px) {
   :root {
-    --header-x: 18px;
+    --header-x: 20px;
     --card-radius: 30px;
+    --mobile-slide-gap: 16px;
   }
 
   .top-bar {
-    height: 24px;
+    height: 23px;
   }
 
   .top-track span {
@@ -645,11 +538,11 @@ body.menu-open .mobile-nav a:nth-child(6) {
   }
 
   .brand-logo {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .header-actions {
-    gap: 10px;
+    gap: 12px;
   }
 
   .bag-link {
@@ -663,27 +556,20 @@ body.menu-open .mobile-nav a:nth-child(6) {
   }
 
   .menu-btn {
-    display: inline-grid;
     width: 36px;
     height: 36px;
   }
 
   .hero-heading {
-    padding: 32px 13px 0;
-  }
-
-  .hero-kicker {
-    margin-bottom: 17px;
-    font-size: 10px;
-    letter-spacing: 0.14em;
+    padding: 34px 12px 0;
   }
 
   .hero-title {
     width: 100%;
     max-width: 100%;
-    font-size: clamp(44px, 13.7vw, 62px);
-    line-height: 0.84;
-    letter-spacing: -0.074em;
+    font-size: clamp(48px, 14.4vw, 62px);
+    line-height: 0.82;
+    letter-spacing: -0.072em;
   }
 
   .hero-title span:first-child {
@@ -692,55 +578,34 @@ body.menu-open .mobile-nav a:nth-child(6) {
   }
 
   .hero-slider {
-    margin-top: 44px;
+    position: relative;
+    margin-top: 46px;
     padding-inline: 15px;
     overflow: hidden;
   }
 
   .hero-track {
     display: flex;
-    gap: 0;
+    gap: var(--mobile-slide-gap);
     width: 100%;
-    transition: transform 0.62s var(--ease);
+    transition: transform 0.58s var(--ease);
     will-change: transform;
     touch-action: pan-y;
   }
 
   .hero-card {
-    flex: 0 0 100%;
-    min-height: min(113vw, 440px);
-    height: min(113vw, 440px);
+    flex: 0 0 calc(100% - var(--mobile-slide-gap));
+    height: min(112vw, 430px);
+    min-height: 330px;
     border-radius: 30px;
+    animation: none;
     opacity: 1;
     transform: none;
-    animation: none;
-  }
-
-  .hero-card::after {
-    inset: 11px;
-    border-radius: 22px;
-  }
-
-  .hero-card-content {
-    padding: 0 22px 26px;
-    opacity: 1;
-    transform: none;
-    animation: none;
-  }
-
-  .hero-card-content span {
-    font-size: 9px;
-    letter-spacing: 0.12em;
-  }
-
-  .hero-card-content h2 {
-    max-width: 250px;
-    font-size: 31px;
   }
 
   .slider-controls {
     position: absolute;
-    right: 31px;
+    right: 29px;
     bottom: 18px;
     z-index: 5;
     display: flex;
@@ -751,55 +616,36 @@ body.menu-open .mobile-nav a:nth-child(6) {
   .slider-btn {
     display: inline-grid;
     place-items: center;
-    width: 38px;
-    height: 38px;
-    border: 1px solid rgba(255, 255, 255, 0.42);
+    width: 37px;
+    height: 37px;
     border-radius: 50%;
     color: var(--black);
-    background: rgba(255, 255, 255, 0.9);
-    font-size: 28px;
+    background: rgba(255, 255, 255, 0.92);
+    font-size: 27px;
     line-height: 1;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s var(--ease), background 0.3s var(--ease);
-  }
-
-  .slider-btn:active {
-    transform: scale(0.92);
+    backdrop-filter: blur(8px);
   }
 
   .mobile-menu {
-    width: min(88vw, 350px);
-    padding: 24px 24px 28px;
-  }
-
-  .mobile-nav {
-    gap: 17px;
-    margin-top: 68px;
+    width: min(86vw, 340px);
+    padding-inline: 28px;
   }
 
   .mobile-nav a {
-    font-size: 31px;
-  }
-
-  .mobile-menu-footer p {
-    font-size: 12.5px;
+    font-size: 27px;
   }
 }
 
 @media (max-width: 390px) {
   .hero-title {
-    font-size: clamp(41px, 13vw, 52px);
+    font-size: clamp(42px, 13.7vw, 52px);
   }
 
   .hero-card {
-    min-height: 332px;
-  }
-
-  .hero-card-content h2 {
-    font-size: 28px;
+    min-height: 315px;
   }
 
   .mobile-nav a {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
