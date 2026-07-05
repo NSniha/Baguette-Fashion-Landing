@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Baguette | Creative Playground</title>
+  <!-- SEO meta information -->
+  <title>Baguette | Design Studio for Bold Visual Stories</title>
+  <meta name="description" content="Baguette is a creative design studio crafting refined brand identities, editorial visuals, packaging systems, and digital experiences for modern businesses." />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Announcement marquee -->
   <div class="top-bar">
     <div class="top-track" data-marquee>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
-      <span>Now Booking for Spring 2023 <i>☺</i></span>
+      <span>Now booking brand launches for 2026 <i>☺</i></span>
+      <span>Creative direction for modern founders <i>☺</i></span>
+      <span>Packaging, identity, and digital design <i>☺</i></span>
+      <span>Thoughtful visuals for memorable brands <i>☺</i></span>
+      <span>Now booking brand launches for 2026 <i>☺</i></span>
+      <span>Creative direction for modern founders <i>☺</i></span>
+      <span>Packaging, identity, and digital design <i>☺</i></span>
+      <span>Thoughtful visuals for memorable brands <i>☺</i></span>
     </div>
   </div>
 
+  <!-- Site header -->
   <header class="site-header">
     <a href="#" class="brand-logo" aria-label="Baguette home">Baguette</a>
 
+    <!-- Desktop navigation -->
     <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#">Studio</a>
+      <a href="#">Story</a>
       <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">For Designers</a>
+      <a href="#">Work</a>
+      <a href="#">For Brands</a>
       <a href="#">Contact</a>
     </nav>
 
+    <!-- Header actions -->
     <div class="header-actions">
       <a href="#" class="bag-link">Bag</a>
-      <button class="bag-count" type="button" aria-label="Bag count">0</button>
+      <button class="bag-count" type="button" aria-label="Saved brief count">0</button>
 
       <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span>
@@ -49,8 +58,10 @@
     </div>
   </header>
 
+  <!-- Mobile menu overlay -->
   <div class="menu-overlay" data-overlay></div>
 
+  <!-- Mobile navigation drawer -->
   <aside class="mobile-menu" data-mobile-menu aria-label="Mobile navigation">
     <div class="mobile-menu-head">
       <a href="#" class="mobile-brand">Baguette</a>
@@ -58,40 +69,43 @@
     </div>
 
     <nav class="mobile-nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#">Studio</a>
+      <a href="#">Story</a>
       <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">For Designers</a>
+      <a href="#">Selected Work</a>
+      <a href="#">For Brands</a>
       <a href="#">Contact</a>
     </nav>
 
     <div class="mobile-menu-bottom">
-      <p>Creative playground for thoughtful brands, refined visuals, and expressive digital stories.</p>
-      <a href="#">Start a Project</a>
+      <p>We shape distinctive visual systems for brands that want to feel polished, expressive, and unforgettable.</p>
+      <a href="#">Start Your Brief</a>
     </div>
   </aside>
 
   <main>
+    <!-- Hero section -->
     <section class="hero-section">
       <div class="hero-heading">
         <h1 class="hero-title">
-          <span><em>C</em>REATIVE PLAYGROUND</span>
-          <span>FOR EVERYBODY</span>
+          <span><em>D</em>ESIGN STORIES</span>
+          <span>WITH A BOLD SOUL</span>
         </h1>
       </div>
 
+      <!-- Hero image slider -->
       <div class="hero-slider">
         <div class="hero-track" data-slider-track>
-          <div class="hero-card" style="--img: url('../assets/hero-jewelry.jpg')" role="img" aria-label="Gold jewelry on soft fabric"></div>
-          <div class="hero-card" style="--img: url('../assets/hero-packaging.jpg')" role="img" aria-label="Minimal packaging design"></div>
-          <div class="hero-card" style="--img: url('../assets/hero-table.jpg')" role="img" aria-label="Editorial table styling"></div>
-          <div class="hero-card" style="--img: url('../assets/hero-box.jpg')" role="img" aria-label="Luxury printed box design"></div>
+          <div class="hero-card" style="--img: url('../assets/hero-jewelry.jpg')" role="img" aria-label="Gold jewelry arranged on soft cream fabric"></div>
+          <div class="hero-card" style="--img: url('../assets/hero-packaging.jpg')" role="img" aria-label="Minimal printed packaging with refined typography"></div>
+          <div class="hero-card" style="--img: url('../assets/hero-table.jpg')" role="img" aria-label="Editorial table styling with elegant drink setup"></div>
+          <div class="hero-card" style="--img: url('../assets/hero-box.jpg')" role="img" aria-label="Luxury box design with premium brand lettering"></div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Main JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>
